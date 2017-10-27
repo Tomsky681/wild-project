@@ -1,0 +1,121 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+<h1>TF1</h1>
+    {% for chaine in program1 %}
+		  <div class="col-sm-3 col-md-3" style=" height: 350px; ">
+		    <div class="thumbnail">
+		      <div class="caption">
+		        <h3>{{ chaine.name }} </h3>
+		        <p>{{ chaine.description }} <p>
+		        <p>Audience : {{ chaine.audience }} </p>
+		        <p>Start : {{ chaine.start|date('l H:i') }} </p>
+		        <p>Duration : {{ chaine.duration }} </p>
+
+		        <p><a href="?route=program&id={{ chaine.id}}" class="btn btn-success" role="button">Infos</a>
+		        	<a class="btn btn-primary" href="?route=audience">Voir les audiences</a>
+		        </p>
+		      </div>
+		    </div>
+		  </div>
+    {% endfor %}
+    <div class="row"></div>
+    <h1>France 2</h1>
+        {% for chaine in program2 %}
+		  <div class="col-sm-3 col-md-3" style=" height: 350px; ">
+		    <div class="thumbnail">
+		      <div class="caption">
+		        <h3>{{ chaine.name }} </h3>
+		        <p>{{ chaine.description }} <p>
+		        <p>Audience : {{ chaine.audience }} </p>
+		        <p>Start : {{ chaine.start|date('l H:i') }} </p>
+		        <p>Duration : {{ chaine.duration }} </p>
+
+		        <p><a href="?route=program&id={{ chaine.id}}" class="btn btn-success" role="button">Infos</a>
+		        <a class="btn btn-primary" href="?route=audience">Voir les audiences</a></p>
+		      </div>
+		    </div>
+		  </div>
+    {% endfor %}
+    <div class="row"></div>	
+
+    <h1>France 3</h1>
+     {% for chaine in program3 %}
+		  <div class="col-sm-3 col-md-3" style=" height: 350px; ">
+		    <div class="thumbnail">
+		      <div class="caption">
+		        <h3>{{ chaine.name }} </h3>
+		        <p>{{ chaine.description }} <p>
+		        <p>Audience : {{ chaine.audience }} </p>
+		        <p>Start : {{ chaine.start|date('l H:i') }} </p>
+		        <p>Duration : {{ chaine.duration }} </p>
+
+		        <p><a href="?route=program&id={{ chaine.id}}" class="btn btn-success" role="button">Infos</a>
+		        <a class="btn btn-primary" href="?route=audience">Voir les audiences</a></p>
+		      </div>
+		    </div>
+		  </div>
+		  
+    {% endfor %}
+    <div class="row"></div>
+    <h1>Canal +</h1>
+    {% for chaine in program4 %}
+		  <div class="col-sm-3 col-md-3" style=" height: 350px; ">
+		    <div class="thumbnail">
+		      <div class="caption">
+		        <h3>{{ chaine.name }} </h3>
+		        <p>{{ chaine.description }} <p>
+		        <p>Audience : {{ chaine.audience }} </p>
+		        <p>Start : {{ chaine.start|date('l H:i') }} </p>
+		        <p>Duration : {{ chaine.duration }} </p>
+
+		        <p><a href="?route=program&id={{ chaine.id}}" class="btn btn-success" role="button">Infos</a>
+		        <a class="btn btn-primary" href="?route=audience">Voir les audiences</a></p>
+		      </div>
+		    </div>
+		  </div>
+		  
+    {% endfor %}
+    <div class="row"></div>
+    <h1>France 5</h1>
+    {% for chaine in program5 %}
+		  <div class="col-sm-3 col-md-3" style=" height: 350px; ">
+		    <div class="thumbnail">
+		      <div class="caption">
+		        <h3>{{ chaine.name }} </h3>
+		        <p>{{ chaine.description }} <p>
+		        <p>Audience : {{ chaine.audience }} </p>
+		        <p>Start : {{ chaine.start|date('l H:i') }} </p>
+		        <p>Duration : {{ chaine.duration }} </p>
+
+		        <p><a href="?route=program&id={{ chaine.id}}" class="btn btn-success" role="button">Infos</a>
+		        <a class="btn btn-primary" href="?route=audience">Voir les audiences</a></p>
+		      </div>
+		    </div>
+		  </div>
+		  
+    {% endfor %}
+    <div class="row"></div>
+    <h1>M6</h1>
+    {% for chaine in program6 %}
+		  <div class="col-sm-3 col-md-3" style=" height: 350px; ">
+		    <div class="thumbnail">
+		      <div class="caption">
+		        <h3>{{ chaine.name }} </h3>
+		        <p>{{ chaine.description }} <p>
+		        <p>Audience : {{ chaine.audience }} </p>
+		        <p>Start : {{ chaine.start|date('l H:i') }} </p>
+		        <p>Duration : {{ chaine.duration }} </p>
+
+		        <p><a href="?route=program&id={{ chaine.id}}" class="btn btn-success" role="button">Infos</a>
+		        	<a class="btn btn-primary" href="?route=audience">Voir les audiences</a></p>
+		      </div>
+		    </div>
+		  </div>
+		  
+    {% endfor %}
+    <div class="row"></div>
+
+
+
+{% endblock %}
